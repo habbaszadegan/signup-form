@@ -71,5 +71,5 @@ body {
 
 .passNoMatch {
     border-color: red;
-    border-radius: .7;
+    border-radius: .7px;
 }
