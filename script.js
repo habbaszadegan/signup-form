@@ -4,14 +4,14 @@ const signUpForm = document.querySelector('.signup-form')
 const passNoMatch = document.createElement('p');
 passNoMatch.textContent = '*Passwords do not match';
 
-password.addEventListener('input', () => {
+password.addEventListener('change', () => {
     if (password.value !== passConfirm.value) {
-        password.classList.add('passNoMatch');
-        passConfirm.classList.add('passNoMatch');
-        signUpForm.appendChild('passNoMatch');
+        password.classList.add('passNoMatchCSS');
+        passConfirm.classList.add('passNoMatchCSS');
+        signUpForm.appendChild(passNoMatch);
     } else {
-        signUpForm.removeChild('passNoMatch');
-        password.classList.remove('passNoMatch');
-        passConfirm.classList.remove('passNoMatch');
+        signUpForm.removeChild(passNoMatch);
+        password.classList.remove('passNoMatchCSS');
+        passConfirm.classList.remove('passNoMatchCSS');
     }
 })

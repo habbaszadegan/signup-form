@@ -69,7 +69,7 @@ body {
     box-shadow: 0 0 5px grey;
 }
 
-.passNoMatch {
+.passNoMatchCSS {
     border-color: red;
     border-radius: .7px;
 }
