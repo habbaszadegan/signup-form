@@ -56,4 +56,20 @@ body {
     display: flex;
     flex-direction: column;
     flex-basis: calc(50% - 3rem);
+    font-size: .65rem;
+    color: rgba(0, 0, 0, .8);
+}
+
+.input input {
+    opacity: .2;
+}
+
+.input input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px grey;
+}
+
+.passNoMatch {
+    border-color: red;
+    border-radius: .7;
 }
