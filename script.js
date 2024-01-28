@@ -1,6 +1,7 @@
-const password = document.querySelector('.passJS');
-const passConfirm = document.querySelector('.pass-confJS');
+const password = document.querySelector('.error');
+const passConfirm = document.querySelector('.error-conf');
 const signUpForm = document.querySelector('.signup-form')
+const passErrorDiv = document.querySelector('.passErrorDiv');
 const passNoMatch = document.createElement('p');
 passNoMatch.textContent = '*Passwords do not match';
 
@@ -8,9 +9,7 @@ passConfirm.addEventListener('change', () => {
     if (password.value !== passConfirm.value) {
         password.classList.add('passNoMatchCSS');
         passConfirm.classList.add('passNoMatchCSS');
-        signUpForm.appendChild(passNoMatch);
-        console.log(password.value);
-        console.log(passConfirm.value);
+        passErrorDiv.appendChild(passNoMatch);
     } else {
         signUpForm.removeChild(passNoMatch);
         password.classList.remove('passNoMatchCSS');

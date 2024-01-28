@@ -36,12 +36,12 @@ body {
 }
 
 .text-body {
-    margin: 11vh 4vw;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-.signup-form {
+.text-body .signup-form {
     margin: 3rem 0rem;
 }
 
@@ -50,6 +50,7 @@ body {
     flex-wrap: wrap;
     max-width: 25rem;
     gap: 1rem 3rem;
+    box-shadow: .1rem .1rem 10px grey;
 }
 
 .input {
@@ -60,10 +61,6 @@ body {
     color: rgba(0, 0, 0, .8);
 }
 
-.input input {
-    opacity: .2;
-}
-
 .input input:focus {
     border-color: blue;
     box-shadow: 0 0 5px grey;
@@ -71,5 +68,11 @@ body {
 
 .passNoMatchCSS {
     border-color: red;
-    border-radius: .7px;
+    border-radius: 2px;
+}
+
+.passErrorDiv p {
+    color: red;
+    font-size: .60rem;
+    margin: 0px;
 }
