@@ -41,20 +41,8 @@ body {
     font-weight: bold;
 }
 
-/* .intro-text, .create-acct, .login {
-    margin: 0rem 2rem;
-} */
-
 .intro-text {
     margin: 10rem 0rem 3rem 2rem;
-}
-
-.create-acct {
-    margin: 0rem 0rem .5rem 2rem;
-}
-
-.login {
-    margin: 1rem 0rem 0rem 2rem;
 }
 
 .form-box {
@@ -87,11 +75,12 @@ body {
 }
 
 .input input:focus {
+    outline: none;
     border-color: blue;
     box-shadow: 1px 1px 5px grey;
 }
 
-.passNoMatchCSS {
+#passNoMatchCSS {
     border-color: red;
     border-radius: 2px;
 }
@@ -103,6 +92,7 @@ body {
 }
 
 .create-acct {
+    margin: 0rem 0rem .5rem 2rem;
     background-color: #596D48;
     color: white;
     padding: .75rem 3rem;
@@ -111,6 +101,7 @@ body {
 }
 
 .login {
+    margin: 1rem 0rem 0rem 2rem;
     font-size: .8rem;
 }
 

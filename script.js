@@ -6,13 +6,21 @@ const passNoMatch = document.createElement('p');
 passNoMatch.textContent = '*Passwords do not match';
 
 passConfirm.addEventListener('change', () => {
-    if (password.value !== passConfirm.value) {
-        password.classList.add('passNoMatchCSS');
-        passConfirm.classList.add('passNoMatchCSS');
+    passValidation(password.value, passConfirm.value);
+})
+
+password.addEventListener('change', () => {
+    passValidation(password.value, passConfirm.value);
+})
+
+function passValidation (passValue, confValue) {
+    if (passValue !== confValue) {
+        password.id = 'passNoMatchCSS';
+        passConfirm.id = 'passNoMatchCSS';
         passErrorDiv.appendChild(passNoMatch);
     } else {
-        signUpForm.removeChild(passNoMatch);
-        password.classList.remove('passNoMatchCSS');
-        passConfirm.classList.remove('passNoMatchCSS');
+        passErrorDiv.removeChild(passNoMatch);
+        password.id = '';
+        passConfirm.id = '';
     }
-})
+}
