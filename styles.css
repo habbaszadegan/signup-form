@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,10 +13,36 @@ body {
 
 .leaf-side {
     flex: 1 2 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .leaf {
     height: 100vh;
+}
+
+.logo-background {
+    background-color: rgba(0, 0, 0, .6);
+    margin-top: 20vh;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.logo {
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 5rem;
+}
+
+.logo-background img {
+    height: 80%;
 }
 
 /* 1st attempt */
