@@ -1,4 +1,22 @@
-@font-face {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.leaf-side {
+    flex: 1 2 33%;
+}
+
+.leaf {
+    height: 100vh;
+}
+
+/* 1st attempt */
+
+/* @font-face {
     font-family: Norse Bold;
     src: url(Norse-Bold.otf);
 }
@@ -108,4 +126,4 @@ body {
 a {
     color: green;
     text-decoration: none;
-}
+} */
