@@ -45,6 +45,28 @@ body {
     height: 80%;
 }
 
+.nonleaf-side {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.selling-point, .account {
+    margin-left: 2rem;
+}
+
+.selling-point {
+    margin-top: 7rem;
+    font-weight: bold;
+}
+
+.form {
+    padding-left: 2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* 1st attempt */
 
 /* @font-face {
